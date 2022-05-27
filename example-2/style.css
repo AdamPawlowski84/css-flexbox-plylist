@@ -1,0 +1,92 @@
+*{
+  font-family: verdana;
+  margin: 0;
+}
+
+body{
+  background: #eee;
+}
+
+.wrapper{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* menu base styles */
+
+nav{
+  background: #333;
+}
+
+nav ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+nav a{
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  display: block;
+  padding: 10px;
+}
+
+nav a:hover{
+  background-color: #555;
+}
+
+/* social menu base styles */
+
+a.tw{
+  background: url(https://th.bing.com/th/id/R.d84f4e05045516b92610a1b7027a9c07?rik=%2bh7pwK4ANfLDww&riu=http%3a%2f%2fgirlfriends.1-target.com%2fwp-content%2fuploads%2fsites%2f32%2f2014%2f12%2ftweeter.png&ehk=WC9n3Mva4ZNiXleSzOyCbexkRdcwzd%2f4cgT45sekvTU%3d&risl=&pid=ImgRaw&r=0) no-repeat center;
+  background-size: 80%;
+}
+
+a.fb{
+  background: url(https://th.bing.com/th/id/R.e7b5cb99ddf77dfee5d64db96ad5beba?rik=h1S8amSnfInpPw&riu=http%3a%2f%2fbitcoinchaser.com%2fwp-content%2fuploads%2f2013%2f09%2ffacebook-icon-100x100.jpg&ehk=Ur1hqH6%2b4g7t0KGrKge8TaVs%2b0Y60POIe9qkDxrKRvw%3d&risl=&pid=ImgRaw&r=0) no-repeat center;
+  background-size: 80%;
+}
+
+.social a{
+  text-indent: -10000px;
+}
+
+.social{
+  max-width: 80px;
+  margin: 0 auto;
+}
+
+/* flex styles */
+
+nav ul.social{
+  flex: 1 1 0;
+  display: flex;
+}
+
+nav ul.social li{
+  flex: 1 1 0;
+}
+
+@media screen and (min-width: 768px){
+
+nav ul{
+  display: flex;
+}
+
+
+nav li{
+  flex: 1 1 0;
+}
+
+nav{
+  justify-content: space-between;
+  display: flex
+  }
+
+  .social{
+    margin: 0;
+  }
+
+    
+} /* end media 768 */
